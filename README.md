@@ -1,6 +1,6 @@
 # h8njs
 
-## website
+## websites
 - https://www.npmjs.com/h8n
 - https://www.npmjs.com/~h8n
 

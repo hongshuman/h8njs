@@ -6,7 +6,8 @@ node_modules
 build
 .h8n
 #
-package-lock.json
+# package-lock.json
+# 
 packages/cli/h8n/lib/
 packages/create-h8n/lib/
 packages/h8n/*/lib/

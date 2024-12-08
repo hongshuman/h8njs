@@ -11,3 +11,5 @@ build
 packages/cli/h8n/lib/
 packages/create-h8n/lib/
 packages/h8n/*/lib/
+
+.env

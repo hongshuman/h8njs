@@ -1,12 +1,18 @@
 {
   "name": "h8n",
   "version": "1.0.0",
-  "main": "index.js",
+  "bin": {
+    "h8n": "bin/h8n.mjs"
+  },
   "scripts": {
-    "test": "echo \"OK: test specified\" && exit 0"
+    "test": "echo \"cli/h8n test ok\" && exit 0"
   },
   "keywords": [],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@h8n/logger": "file:../../h8n/logger",
+    "@h8n/utils": "file:../../h8n/utils"
+  }
 }

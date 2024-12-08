@@ -3,16 +3,70 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"h8n# OK test specified\" && exit 0"
+    "test": "echo \"h8n# OK test specified\" && exit 0",
+    "build": "echo build success.",
+    "semantic-release": "dotenv -c -- semantic-release",
+    "semantic-release:local": "dotenv -c -- semantic-release --no-ci"
   },
-  "keywords": [],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "provenance": true
+  },
+  "repository": "github:hongshuman/h8njs",
+  "keywords": [
+    "h8n",
+    "release"
+  ],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",
   "license": "MIT",
-  "description": "",
+  "description": "H8N-description",
   "workspaces": [
     "packages/cli/h8n",
     "packages/h8n/logger",
     "packages/create-h8n",
     "packages/h8n/utils"
-  ]
+  ],
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-cmyr-config": "^2.1.2",
+    "dotenv-cli": "^7.4.4",
+    "lerna": "^8.1.9",
+    "semantic-release": "^24.2.0",
+    "semantic-release-monorepo": "^8.0.2",
+    "semantic-release-plugin-update-version-in-files": "^1.1.0"
+  },
+  "release": {
+    "branches": [
+      "+([0-9]).x",
+      "main",
+      "next",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "config": "conventional-changelog-cmyr-config"
+        }
+      ],
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ]
+        }
+      ]
+    ],
+    "extends": [
+      "semantic-release-monorepo"  
+    ]
+  }
 }

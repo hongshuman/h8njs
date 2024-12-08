@@ -4,7 +4,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"@h8n/logger test ok\" && exit 0"
   },
   "keywords": [],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",

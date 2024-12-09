@@ -55,16 +55,14 @@
           "config": "conventional-changelog-cmyr-config"
         }
       ],
-      "@semantic-release/github",
       "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
-          "assets": [
-            "package.json"
-          ]
+          "assets": [ "package.json" ]
         }
-      ]
+      ],
+      "@semantic-release/github"
     ],
     "extends": [
       "semantic-release-monorepo"  

@@ -63,9 +63,6 @@
         }
       ],
       "@semantic-release/github"
-    ],
-    "extends": [
-      "semantic-release-monorepo"  
     ]
   }
 }

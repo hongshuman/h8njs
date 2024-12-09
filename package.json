@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"h8n# OK test specified\" && exit 0",
     "build": "echo build success.",
+    "list": "lerna list -a",
     "semantic-release": "dotenv -c -- semantic-release",
     "semantic-release:local": "dotenv -c -- semantic-release --no-ci"
   },

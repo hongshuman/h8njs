@@ -49,20 +49,18 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
-      [
-        "@semantic-release/release-notes-generator",
-        {
-          "config": "conventional-changelog-cmyr-config"
-        }
-      ],
-      "@semantic-release/npm",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
       [
         "@semantic-release/git",
         {
           "assets": [ "package.json" ]
         }
       ],
-      "@semantic-release/github"
+      "@semantic-release/npm"
+    ],
+    "extends": [
+      "semantic-release-monorepo"
     ]
   }
 }

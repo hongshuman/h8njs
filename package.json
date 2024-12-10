@@ -14,7 +14,10 @@
     "access": "public",
     "provenance": true
   },
-  "repository": "github:hongshuman/h8njs",
+  "repository": {
+    "type": "git",
+    "url": "github:hongshuman/h8njs"
+  },
   "keywords": [
     "h8n",
     "release"

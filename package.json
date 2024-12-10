@@ -18,6 +18,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/hongshuman/h8njs.git"
   },
+  "homepage": "https://k8nium.cm",
   "keywords": [
     "h8n",
     "release"

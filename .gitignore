@@ -13,4 +13,3 @@ packages/create-h8n/lib/
 packages/h8n/*/lib/
 
 .env
-release.*

@@ -11,12 +11,11 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hongshuman/h8njs.git"
+    "url": "git+ssh://git@github.com/hongshuman/h8njs.git"
   },
   "keywords": [
     "h8n",

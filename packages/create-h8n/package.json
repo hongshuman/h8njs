@@ -1,6 +1,6 @@
 {
   "name": "create-h8n",
-  "version": "1.3.0",
+  "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
@@ -8,9 +8,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "access": "public",
-    "provenance": true
-  },  
+    "access": "public"
+  },
   "keywords": [],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",
   "license": "MIT",

@@ -8,7 +8,8 @@
     "list": "lerna list -a",
     "semantic-release": "dotenv -c -- semantic-release",
     "semantic-release:local": "dotenv -c -- semantic-release --no-ci",
-    "lerna:local": "dotenv -c -- lerna exec --concurrency 1 -- npx --no-install semantic-release --no-ci"
+    "lerna:local": "dotenv -c -- lerna exec --concurrency 1 -- npx --no semantic-release -e semantic-release-monorepo --no-ci",
+    "lerna:echo":  "dotenv -c -- lerna exec --concurrency 1 -- pwd"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

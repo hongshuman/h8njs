@@ -1,6 +1,6 @@
 {
   "name": "create-h8n",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {

@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"@h8n/logger test ok\" && exit 0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "provenance": true
+  },  
   "keywords": [],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",
   "license": "MIT",

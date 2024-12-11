@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "provenance": true
+  },  
   "keywords": [],
   "author": "Hong Shu-man <hongshuman@outlook.com> (https://k8nium.com/)",
   "license": "MIT",
